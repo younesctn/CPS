@@ -1,0 +1,35 @@
+<deployment>
+	<hosts>
+		<host name="localhost"
+			dir="/media/malek/Hdd_2to/Projet/M1/S2/Composant/Projet/CPS/deployment" />
+	</hosts>
+	<cyclicBarrier hostname="localhost" port="55253" />
+	<globalRegistry hostname="localhost" port="55252" />
+	<rmiRegistryPort no="55999" />
+	<jvms2hostnames>
+		<jvm2hostname jvmuri="jvm0"
+			rmiRegistryCreator="true"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+		<jvm2hostname jvmuri="jvm1"
+			rmiRegistryCreator="false"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+		<jvm2hostname jvmuri="jvm2"
+			rmiRegistryCreator="false"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+		<jvm2hostname jvmuri="jvm3"
+			rmiRegistryCreator="false"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+		<jvm2hostname jvmuri="jvm4"
+			rmiRegistryCreator="false"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+		<jvm2hostname jvmuri="jvm5"
+			rmiRegistryCreator="false"
+			hostname="localhost"
+			mainclass="app.DistributedCVM" />
+	</jvms2hostnames>
+</deployment>

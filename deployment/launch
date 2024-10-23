@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# Fonction pour arrêter tous les processus en arrière-plan
+cleanup() {
+    echo "Arrêt des processus en douceur avec SIGTERM..."
+    kill -SIGTERM $(jobs -p) 2>/dev/null
+    sleep 2  # Donne un peu de temps pour terminer proprement
+    echo "Forçage de l'arrêt avec SIGKILL si nécessaire..."
+    kill -SIGKILL $(jobs -p) 2>/dev/null
+    exit
+}
+
+# Attrape les signaux SIGINT et SIGTERM et appelle cleanup
+trap cleanup SIGINT SIGTERM
+
+# Lancer start-cyclicbarrier en arrière-plan
+./start-cyclicbarrier &
+echo "start-cyclicbarrier lancé."
+
+# Lancer start-gregistry en arrière-plan
+./start-gregistry &
+echo "start-gregistry lancé."
+
+# Attendre un peu
+echo "Attente de démarrage..."
+sleep 5s  # Attend 5 secondes
+
+# Lancer les différentes instances de DCVM en arrière-plan
+./start-dcvm jvm0 &
+echo "start-dcvm jvm0 lancé."
+./start-dcvm jvm1 &
+echo "start-dcvm jvm1 lancé."
+./start-dcvm jvm2 &
+echo "start-dcvm jvm2 lancé."
+./start-dcvm jvm3 &
+echo "start-dcvm jvm3 lancé."
+./start-dcvm jvm4 &
+echo "start-dcvm jvm4 lancé."
+./start-dcvm jvm5 &
+echo "start-dcvm jvm5 lancé."
+
+echo "Tous les services ont été lancés. Appuyez sur Ctrl+C pour arrêter."
+
+# Attend que tous les jobs en arrière-plan terminent ou soient tués
+wait
+echo "Tous les services ont été correctement arrêtés."
+

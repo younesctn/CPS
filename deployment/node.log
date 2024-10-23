@@ -1,0 +1,8 @@
+1715522338492|Sensor valuesn35: [Heat: 49.01, Weather: 3.06, Biological: 68.53, Humidity: 59.21, Smoke: 34.74, WindSpeed: 50.99, WindDirection: 43.45]
+1715522338623|executing node component.
+1715522346254|Registering node and connecting to neighbors
+1715522346355|Connection established towards neighbor at SE: n31
+1715522346367|Connection established towards neighbor at NE: n40
+1715522346398|Connection established towards neighbor at SW: n25
+1715522346553|Connection established towards neighbor at SW: n30
+1715522538748|stopping node component.

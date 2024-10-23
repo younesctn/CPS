@@ -1,0 +1,6 @@
+1715470075641|Sensor valuesn49: [WindSpeed: 46.79, WindDirection: 12.03, Smoke: 49.58, Heat: 81.19, Humidity: 64.85, Weather: 41.21, Biological: 40.95]
+1715470075653|executing node component.
+1715470083314|Registering node and connecting to neighbors
+1715470083392|Connection established towards neighbor at SW: n44
+1715470083429|Connection established towards neighbor at SE: n45
+1715470095692|stopping node component.

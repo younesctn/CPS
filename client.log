@@ -1,0 +1,11 @@
+1715549136165|starting client component.
+1715549136165|Connected to Register
+1715549145591|Requesting node: n5
+1715549145592|Found node: n5
+1715549145593|Connected to n5
+1715549147588|request result: [n5, n10]
+1715549147589|request result: [Node5: Weather(30.14), Node5: WindSpeed(9.04)]
+1715549147589|request result: [n5, n10, n6, n2, n1]
+1715549147593|request result: [Node5: Smoke(84.43), Node5: Heat(63.89), Node5: Biological(65.76), Node10: Smoke(84.86), Node10: Heat(97.17), Node10: Biological(48.51), Node6: Smoke(63.22), Node6: Heat(78.26), Node6: Biological(23.03), Node2: Smoke(9.79), Node2: Heat(50.69), Node2: Biological(55.91), Node11: Smoke(70.94), Node11: Heat(17.43), Node11: Biological(4.07), Node1: Smoke(2.3), Node1: Heat(55.16), Node1: Biological(53.48)]
+1715549147594|request result: [Node5: Weather(30.14), Node5: WindSpeed(9.04), Node10: Weather(90.69), Node10: WindSpeed(33.91), Node15: Weather(79.31), Node15: WindSpeed(95.27), Node20: Weather(80.48), Node20: WindSpeed(32.91), Node24: Weather(50.59), Node24: WindSpeed(84.09), Node28: Weather(48.77), Node28: WindSpeed(16.96), Node32: Weather(38.89), Node32: WindSpeed(52.35), Node23: WindSpeed(92.72), Node19: Weather(93.1), Node19: WindSpeed(35.05), Node14: Weather(93.21), Node14: WindSpeed(26.11), Node23: Weather(46.7)]
+1715549156217|stopping client component.
